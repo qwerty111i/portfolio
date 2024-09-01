@@ -1,0 +1,201 @@
+.portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: white;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    margin-top: 20px;
+    text-align: center;
+    gap: 5%;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    flex: .5;
+}
+
+.row-1, .row-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+    background-color: #5d5d5d;
+    border: none;
+    border-radius: 25px;
+    flex: .5;
+}
+
+.project-image .img-1 {
+    width: 85%;
+    height: auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project-image .img-2 {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project-image .img-3 {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project-image .img-4 {
+    width: 82%;
+    height: auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project-content .project-title {
+    display: flex;
+    justify-content: center;
+    flex: .2;
+    text-align: center;
+    color: black;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 20px;
+    color: rgb(231, 229, 229);
+}
+
+.project-content .project-description {
+    display: flex;
+    justify-content: center;
+    flex: .2;
+    margin-top: 10px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgb(231, 229, 229);
+    line-height: 23px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.row-2 {
+    margin-bottom: 200px;
+}
+
+.project-link, .github-link {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.project-link {
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+    color: white;
+}
+
+.project-link:hover {
+    background-position: right center;
+}
+
+.github-link {
+    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.github-link:hover {
+    background-position: right center;
+}
+
+.button-1, .button-2 {
+   padding-bottom: 30px;
+}
+
+.button-3, .button-4 {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .row-1, .row-2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row-1 {
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-2 {
+        margin-top: 100px;
+    }
+
+    .project {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-link {
+        margin-bottom: 20px;
+    }
+
+    .row-2 {
+        margin-bottom: 450px;
+    }
+}
