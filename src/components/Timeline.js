@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Timeline.css'
 
 import { Slide } from "react-awesome-reveal";
 
 const Timeline = () => {
+    
+    const [mobileView, setMobileView] = useState(window.innerWidth <= 850);
+    useEffect(() => {
+        const handleResize = () => {
+            setMobileView(window.innerWidth <= 850);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
   return (
     <div className='timeline-container'>
         <h1 className='timeline-title time-title'>Work Experience and Projects</h1>
@@ -25,7 +35,7 @@ const Timeline = () => {
             </div>
             <div className='timeline-item'>
                 <div className='timeline-circle c2' />
-                <Slide direction="left" triggerOnce>
+                <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
                     <div className='timeline-content'>
                         <p className='timeline-date'>June 2022 - August 2022</p>
                         <h2 className='timeline-title'>TechUnison</h2>
@@ -54,7 +64,7 @@ const Timeline = () => {
             </div>
             <div className='timeline-item'>
                 <div className='timeline-circle c4' />
-                <Slide direction="left" triggerOnce>
+                <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
                     <div className='timeline-content'>
                         <p className='timeline-date'>May 2021</p>
                         <h2 className='timeline-title'>4H Project Gift Website</h2>

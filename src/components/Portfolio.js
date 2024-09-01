@@ -28,7 +28,7 @@ const Portfolio = () => {
                   View Project
                 </button>
                 <button className='github-link'
-                onClick={() => window.location.href = '/'}>
+                onClick={() => window.location.href = 'https://github.com/qwerty111i/portfolio'}>
                   View GitHub
                 </button>
               </div>
