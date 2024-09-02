@@ -16,7 +16,7 @@ const Timeline = () => {
 
   return (
     <div className='timeline-container'>
-        <h1 className='timeline-title time-title'>Work Experience and Projects</h1>
+        <h1 className='timeline-title time-title'>Work Experience</h1>
         <div className='timeline'>
             <div className='timeline-item'>
                 <div className='timeline-circle c1' />

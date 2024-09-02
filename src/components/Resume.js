@@ -73,21 +73,6 @@ const Resume = () => {
       <Slide direction="right" triggerOnce>
         <div className='skills'>
           <h1 className='skills-title'>Skills & Certifications</h1>
-          <div className='software-container'>
-            <h1>Software</h1>
-            <div className='skill-box software-box google'>
-              <img className='google-img' src={google} alt="Google" />
-              <p>Google Suite</p>
-            </div>
-            <div className='skill-box software-box microsoft'>
-              <img className='microsoft-img' src={microsoft} alt="Microsoft" />
-              <p>MS Office</p>
-            </div>
-            <div className='skill-box software-box godot'>
-              <img className='godot-img' src={godot} alt="Godot" />
-              <p>Godot</p>
-            </div>
-          </div>
           <div className='language-container'>
             <h1>Languages</h1>
             <div className='skill-box language-box java'>
@@ -124,6 +109,21 @@ const Resume = () => {
             <div className='skill-box framework-box bootstrap'>
               <img className='bootstrap-img' src={bootstrap} alt="Bootstrap" />
               <p>Bootstrap</p>
+            </div>
+          </div>
+          <div className='software-container'>
+            <h1>Software</h1>
+            <div className='skill-box software-box google'>
+              <img className='google-img' src={google} alt="Google" />
+              <p>Google Suite</p>
+            </div>
+            <div className='skill-box software-box microsoft'>
+              <img className='microsoft-img' src={microsoft} alt="Microsoft" />
+              <p>MS Office</p>
+            </div>
+            <div className='skill-box software-box godot'>
+              <img className='godot-img' src={godot} alt="Godot" />
+              <p>Godot</p>
             </div>
           </div>
         </div>

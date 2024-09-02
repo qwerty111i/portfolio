@@ -126,7 +126,7 @@
     margin-left: 20px;
     margin-top: 20px;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .timeline-description li {
@@ -163,10 +163,6 @@
     }
 
     .timeline-item:nth-child(even) .timeline-position {
-        text-align: left;
-    }
-
-    .timeline-description {
         text-align: left;
     }
 }
