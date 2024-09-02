@@ -26,9 +26,9 @@ const Timeline = () => {
                         <h2 className='timeline-title'>Edison High School</h2>
                         <h3 className='timeline-position'>Teacher</h3>
                         <ul className='timeline-description'>
-                            <li>Worked with students to elevate their musical abilities and prepare them for success in competitions.</li>
-                            <li>Fostered an inclusive learning environment where student voices are heard and suggestions are implemented.</li>
-                            <li>Coached students through high-pressure scenarios in order to prepare for competitions against other schools.</li>
+                            <li>Worked with students to elevate their musical abilities and prepare them for success in competitions</li>
+                            <li>Fostered an inclusive learning environment where student voices are heard and suggestions are implemented</li>
+                            <li>Coached students through high-pressure scenarios in order to prepare for competitions against other schools</li>
                         </ul>
                     </div>
                 </Slide>
@@ -41,9 +41,9 @@ const Timeline = () => {
                         <h2 className='timeline-title'>TechUnison</h2>
                         <h3 className='timeline-position'>Intern</h3>
                         <ul className='timeline-description'>
-                            <li>Engaged in designing and coding various parts of an education application for the company using Flutter.</li>
-                            <li>Conceptualized unique design styles to make the education application more engaging to the end user.</li>
-                            <li>Corresponded with team leads in the company to make various changes to the work as necessary.</li>
+                            <li>Enhanced the user interface of an education application by designing and implementing visually appealing and user-friendly components using Flutter</li>
+                            <li>Conceptualized unique design styles to make the education application more engaging to the end user</li>
+                            <li>Collaborated with team leads and made various changes to the design based on real-time feedback</li>
                         </ul>
                     </div>
                 </Slide>
@@ -56,8 +56,8 @@ const Timeline = () => {
                         <h2 className='timeline-title'>4H Eco-Maniacs Website</h2>
                         <h3 className='timeline-position'>Developer</h3>
                         <ul className='timeline-description'>
-                            <li>Developed a website for an organization sponsored by Rutgers that is focused on environmental community service using parallax, HTML, and Bootstrap studio.</li>
-                            <li>Customized each page of the website in order to attract new members to join the organization and provide information about the activities of the club.</li>
+                            <li>Developed a website for a Rutgers cooperative extension that is focused on environmental community service using parallax, HTML, and the Bootstrap framework</li>
+                            <li>Customized each page of the website in order to attract new members to join the organization and provide information about the activities of the club</li>
                         </ul>
                     </div>
                 </Slide>
@@ -70,10 +70,10 @@ const Timeline = () => {
                         <h2 className='timeline-title'>4H Project Gift Website</h2>
                         <h3 className='timeline-position'>Developer</h3>
                         <ul className='timeline-description'>
-                            <li>Collaborated with an organization that buys gifts for children during Christmas in an effort to bring in additional donations to buy more gifts.</li>
-                            <li>Designed a website to bring in donations for the organization using HTML, CSS, and Javascript.</li>
-                            <li>Adapted the website to work on mobile and desktop, and displayed testimonials from volunteers.</li>
-                            <li>Researched various hosting methods to reduce the overall cost of running the website, and updated the website whenever necessary.</li>
+                            <li>Designed a website to bring in donations for the organization that buys gifts for children during Christmas using HTML, CSS, and Javascript</li>
+                            <li>Adapted the website to work on mobile and desktop, and displayed testimonials from volunteers</li>
+                            <li>Researched various hosting methods to reduce the overall cost of running the website</li>
+                            <li>Maintained and updated the website whenever necessary</li>
                         </ul>
                     </div>
                 </Slide>
