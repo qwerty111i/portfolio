@@ -46,6 +46,7 @@
 
 .education-item {
     display: flex;
+    flex: .5;
     align-items: flex-start;
     margin-top: 50px;
 }
@@ -63,8 +64,8 @@
 
 .degree-container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
+    justify-content: start;
+    gap: 30%;
 }
 
 .coursework {
@@ -102,7 +103,7 @@
 .skills {
     display: flex;
     flex-direction: column;
-    margin-right: 0px;
+    align-items: center;
     margin-top: 50px;
     color: rgb(219, 219, 219);
     font-family: "Exo 2", sans-serif;
@@ -119,107 +120,21 @@
     font-size: 35px;
 }
 
-.software-container {
-    width: 87%;
-    margin-top: 30px;
-    margin-left: 33px;
-    height: 290px;
-    max-width: 1280px;
-    padding: 20px;
-    border: none;
-    border-radius: 25px;
-    background-color: #5d5d5d;
-    text-align: center;
-}
-
 .language-container {
-    width: 87%;
-    margin-top: 30px;
-    margin-left: 33px;
-    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-top: 10%;
     max-width: 1280px;
-    padding: 20px;
     border: none;
     border-radius: 25px;
     background-color: #5d5d5d;
     text-align: center;
 }
 
-.framework-container {
-    width: 87%;
-    margin-top: 30px;
-    margin-left: 33px;
-    height: 290px;
-    max-width: 1280px;
-    padding: 20px;
-    border: none;
-    border-radius: 25px;
-    background-color: #5d5d5d;
-    text-align: center;
-}
-
-.skill-box {
-    width: 100%;
-    margin-top: 15px;
-    height: 50px;
-    max-width: 1280px;
-    padding: 20px;
-    border: none;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.software-box {
-    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
-    background-size: 200% 200%;
-    animation: gradientAnimation 5s linear infinite;
-}
-
-.google {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-}
-
-.google .google-img {
-    display: block;
-    width: 40px;
-    height: auto;
-    margin-left: 20px;
-    margin-right: 34px;
-}
-
-.microsoft {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-}
-
-.microsoft .microsoft-img {
-    display: block;
-    width: 80px;
-    height: auto;
-    margin-right: 15px;
-}
-
-.godot {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-}
-
-.godot .godot-img {
-    display: block;
-    width: 50px;
-    height: auto;
-    margin-right: 30px;
-    margin-left: 15px;
+.language-container h1 {
+    padding: 15px 0;
 }
 
 .language-box {
@@ -228,85 +143,21 @@
     animation: gradientAnimation 5s linear infinite;
 }
 
-.java {
+.framework-container {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
-    color: black;
-    font-weight: bold;
+    width: 95%;
+    margin-top: 10%;
+    max-width: 1280px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5d5d5d;
+    text-align: center;
 }
 
-.java .java-img {
-    display: block;
-    width: 45px;
-    height: auto;
-    margin-left: 17px;
-    margin-right: 30px;
-}
-
-.python {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-}
-
-.python .python-img {
-    display: block;
-    width: 40px;
-    height: auto;
-    margin-left: 20px;
-    margin-right: 30px;
-    margin-top: 8px;
-}
-
-.html {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-}
-
-.html .html-img {
-    display: block;
-    width: 55px;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 27px;
-}
-
-.css {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-}
-
-.css .css-img {
-    display: block;
-    width: 33px;
-    height: auto;
-    margin-left: 24px;
-    margin-right: 35px;
-}
-
-.javascript {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-}
-
-.javascript .javascript-img {
-    display: block;
-    width: 50px;
-    height: auto;
-    margin-left: 17px;
-    margin-right: 28px;
+.framework-container h1 {
+    padding: 15px 0;
 }
 
 .framework-box {
@@ -315,70 +166,538 @@
     animation: gradientAnimation 5s linear infinite;
 }
 
+.software-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-top: 10%;
+    max-width: 1280px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5d5d5d;
+    text-align: center;
+}
+
+.software-container h1 {
+    padding: 15px 0;
+}
+
+.software-box {
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.database-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-top: 10%;
+    max-width: 1280px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5d5d5d;
+    text-align: center;
+}
+
+.database-container h1 {
+    padding: 15px 0;
+}
+
+.database-box {
+    background: linear-gradient(to right, #eb5050, #ddff6e);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+}
+
+.skill-box {
+    width: 100%;
+    justify-content: space-evenly;
+    height: 50px;
+    margin: 8px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.img-container {
+    flex: 0 0 30%;
+}
+
+.java {
+    display: flex;
+    flex: .5;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.java .java-img {
+    width: 40px;
+    height: auto;
+}
+
+.java p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.c-sharp {
+    display: flex;
+    flex: .5;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.c-sharp .c-sharp-img {
+    width: 35px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.c-sharp p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.c {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.c .c-img {
+    width: 35px;
+    margin-top: 4px;
+    height: auto;
+}
+
+.c p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.python {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.python .python-img {
+    width: 40px;
+    height: auto;
+    margin-top: 8px;
+}
+
+.python p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.html {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.html .html-img {
+    width: 50px;
+    height: auto;
+    margin-top: 4px;
+}
+
+.html p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.css {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.css .css-img {
+    width: 31px;
+    height: auto;
+    margin-top: 4px;
+}
+
+.css p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.javascript {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.javascript .javascript-img {
+    width: 45px;
+    height: auto;
+    margin-top: 4px;
+}
+
+.javascript p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.xml {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.xml .xml-img {
+    width: 35px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.xml p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.java, .c, .html, .javascript {
+    margin-left: 15px;
+}
+
+.c-sharp, .python, .css, .xml {
+    margin-right: 15px;
+}
+
+.javascript, .xml {
+    margin-bottom: 7%;
+}
+
 .react {
     display: flex;
-    justify-content: flex-start;
+    flex: 1;
     align-items: center;
     color: black;
     font-weight: bold;
 }
 
 .react .react-img {
-    display: block;
-    width: 70px;
+    width: 40px;
     height: auto;
-    margin-left: 5px;
-    margin-right: 18px;
+    margin-top: 2px;
+}
+
+.react p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.node {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.node .node-img {
+    width: 40px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.node p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.express {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.express .express-img {
+    width: 40px;
+    height: auto;
+    margin-top: 2px;
+}
+
+.express p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.websocket {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.websocket .websocket-img {
+    width: 35px;
+    height: auto;
+    margin-top: 4px;
+}
+
+.websocket p {
+    flex: 0 0 50%;
+    text-align: start;
 }
 
 .flutter {
     display: flex;
-    justify-content: flex-start;
+    flex: 1;
     align-items: center;
     color: black;
     font-weight: bold;
 }
 
 .flutter .flutter-img {
-    display: block;
     width: 30px;
     height: auto;
-    margin-left: 23px;
-    margin-right: 40px;
+    margin-top: 3px;
+}
+
+.flutter p {
+    flex: 0 0 50%;
+    text-align: start;
 }
 
 .bootstrap {
     display: flex;
-    justify-content: flex-start;
+    flex: 1;
     align-items: center;
     color: black;
     font-weight: bold;
 }
 
 .bootstrap .bootstrap-img {
-    display: block;
-    width: 48px;
+    width: 40px;
     height: auto;
-    margin-left: 19px;
-    margin-right: 26px;
+}
+
+.bootstrap p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.react, .express, .flutter {
+    margin-left: 15px;
+}
+
+.node, .websocket, .bootstrap {
+    margin-right: 15px;
+}
+
+.flutter, .bootstrap {
+    margin-bottom: 7%;
+}
+
+.androidStudio {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.androidStudio .androidStudio-img {
+    width: 35px;
+    height: auto;
+}
+
+.androidStudio p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.unity {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.unity .unity-img {
+    width: 35px;
+    height: auto;
+}
+
+.unity p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.godot {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.godot .godot-img {
+    width: 40px;
+    height: auto;
+}
+
+.godot p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.postman {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.postman .postman-img {
+    width: 35px;
+    height: auto;
+}
+
+.postman p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.sonarqube {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sonarqube .sonarqube-img {
+    width: 40px;
+    height: auto;
+}
+
+.sonarqube p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.git {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.git .git-img {
+    width: 40px;
+    height: auto;
+}
+
+.git p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.androidStudio, .godot, .sonarqube {
+    margin-left: 15px;
+}
+
+.unity, .postman, .git {
+    margin-right: 15px;
+}
+
+.sonarqube, .git {
+    margin-bottom: 7%;
+}
+
+.firebase {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.firebase .firebase-img {
+    width: 30px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.firebase p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.mongodb {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.mongodb .mongodb-img {
+    width: 30px;
+    height: auto;
+    margin-top: 4px;
+}
+
+.mongodb p {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.firebase {
+    margin-left: 10px;
+}
+
+.mongodb {
+    margin-right: 10px;
+}
+
+.firebase, .mongodb {
+    margin-bottom: 5%;
 }
 
 @media only screen and (max-width: 1200px) {
     .education {
         margin-left: 0;
-    }
-
-    .skills {
-        margin-right: 0;
-    }
-
-    .degree-container {
-        justify-content: flex-start;
-        gap: 30%;
-    }
-
-    .software-container, .language-container, .framework-container {
-        margin-top: 60px;
     }
 
     .college {
@@ -403,60 +722,8 @@
         font-size: 45px;
     }
 
-    .skills {
-        align-items: center;
-    }
-
-    .skill-box {
-        justify-content: center;
-    }
-
-    .google .google-img {
-        margin-left: 20px;
-    }
-
-    .microsoft .microsoft-img {
-        margin-left: -20px;
-    }
-
-    .godot .godot-img {
-        margin-left: -30px;
-    }
-
-    .java .java-img {
-        margin-left: -35px;
-    }
-
-    .python .python-img {
-        margin-left: -10px;
-    }
-
-    .html .html-img {
-        margin-left: -22px;
-    }
-
-    .css .css-img {
-        margin-left: -25px;
-    }
-
-    .javascript .javascript-img {
-        margin-left: 7px;
-    }
-
-    .react .react-img {
-        margin-left: -30px;
-    }
-
-    .flutter .flutter-img {
-        margin-left: -5px;
-    }
-
-    .bootstrap .bootstrap-img {
-        margin-left: 15px;
-    }
-
-    .software-container, .language-container, .framework-container {
-        margin-left: 0px;
+    .javascript, .express, .websocket, .sonarqube {
+        font-size: 16px;
     }
 }
 
