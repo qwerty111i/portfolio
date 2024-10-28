@@ -460,7 +460,7 @@
     flex: 1;
     align-items: center;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -703,6 +703,10 @@
     .college {
         margin-top: 20px;
     }
+
+    .bootstrap, .websocket, .javascript {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -722,7 +726,7 @@
         font-size: 45px;
     }
 
-    .javascript, .express, .websocket, .sonarqube {
+    .javascript, .express, .websocket, .sonarqube, .bootstrap {
         font-size: 16px;
     }
 }
