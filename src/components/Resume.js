@@ -180,7 +180,7 @@ const Resume = () => {
                 <div className='img-container'>
                   <img className='websocket-img' src={websocket} alt="Websockets" />
                 </div>
-                <p>Websocket</p>
+                <p>WebSockets</p>
               </div>
             </div>
             <div className='row'>
