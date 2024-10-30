@@ -79,7 +79,7 @@ const Portfolio = () => {
               </div>
               <div className='project-content content-4'>
                 <h1 className='project-title'>Cave Escape Game</h1>
-                <p className='project-description'>This is a showcase game created using Godot, and programmed with GDScript.  It is a maze game, where the player has to collect the reward before getting run over by a boulder.  The browser showcase is slightly glitchy</p>
+                <p className='project-description'>This is a showcase game created using Godot, and programmed with GDScript.  It is a maze game, where the player has to collect the reward before getting run over by a boulder.  The browser showcase is slightly glitchy.</p>
               </div>
               <div className='project-buttons button-4'>
                 <button className='project-link'

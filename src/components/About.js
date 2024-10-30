@@ -35,7 +35,7 @@ const About = () => {
               </div>
               <div className='text-container'>
                 <h1 className='title'>About Me</h1>
-                <p className='text'>I am a 2nd year Computer Science student at Georgia Tech, specializing in System Architecture and Intelligence.  I am a skilled developer with hands-on experience in Java, Python, and front-end languages.  I excel in critical thinking and thrive in collaborative team environments.  I am currently seeking an internship where I can further enhance my technical skills and contribute to innovative projects alongside a dynamic team.</p>
+                <p className='text'>I am a 2nd year Computer Science student at Georgia Tech, specializing in System Architecture and Intelligence.  I am a skilled developer with hands-on experience in Java, Python, and other languages.  I excel in critical thinking and thrive in collaborative team environments.  I am currently seeking an internship where I can further enhance my technical skills and contribute to innovative projects alongside a dynamic team.</p>
                 <p className='text-contact'>Email: adwaithsramesh@gmail.com</p>
               </div>
             </div>
