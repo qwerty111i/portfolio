@@ -1,8 +1,11 @@
 .portfolio {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     padding-top: 80px;
     box-sizing: border-box;
+    gap: 5%;
+    height: auto;
 }
 
 .portfolio-title {
@@ -14,67 +17,39 @@
     font-size: 45px;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    width: 87%;
-    margin-top: 20px;
-    text-align: center;
-    gap: 5%;
-}
-
 .project-image {
     display: flex;
     justify-content: center;
     flex: .5;
 }
 
-.row-1, .row-2 {
+.rows {
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .project {
     display: flex;
     flex-direction: column; 
-    height: 100%;
     background-color: #5d5d5d;
-    border: none;
     border-radius: 25px;
-    flex: .5;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    flex: 0 0 40%;
 }
 
-.project-image .img-1 {
-    width: 85%;
-    height: auto;
+.img {
+    width: 95%;
+    height: 300px;
     margin-top: 30px;
     border: none;
     border-radius: 10px;
-}
-
-.project-image .img-2 {
-    width: 90%;
-    height: auto;
-    margin-top: 30px;
-    border: none;
-    border-radius: 10px;
-}
-
-.project-image .img-3 {
-    width: 90%;
-    height: auto;
-    margin-top: 30px;
-    border: none;
-    border-radius: 10px;
-}
-
-.project-image .img-4 {
-    width: 82%;
-    height: auto;
-    margin-top: 30px;
-    border: none;
-    border-radius: 10px;
+    object-fit: cover;
 }
 
 .project-content .project-title {
@@ -93,7 +68,7 @@
 
 .project-content .project-description {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex: .2;
     margin-top: 10px;
     font-family: "Exo 2", sans-serif;
@@ -118,10 +93,6 @@
     margin-top: 30px;
 }
 
-.row-2 {
-    margin-bottom: 200px;
-}
-
 .project-link, .github-link {
     width: 150px;
     height: 50px;
@@ -136,96 +107,27 @@
     z-index: 0;
 }
 
-.project-link:hover, .github-link:hover {
-    border: none;
-}
-
-.project-1 .project-link {
-    background-image: linear-gradient(to right, #B24592 0%, #F15F79  51%, #B24592  100%);
-    background-size: 200% auto;
-    transition: 0.5s;
-    color: white;
-}
-
-.project-1 .project-link:hover {
-    background-position: right center;
-}
-
-.project-1 .github-link {
-    background-image: linear-gradient(to right, #485563 0%, #29323c  51%, #485563  100%);
-    background-size: 200% auto;
-    transition: 0.5s;
-    color: white;
-}
-
-.project-1 .github-link:hover {
-    background-position: right center;
-}
-
-.project-2 .project-link {
-    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
-    background-size: 200% auto;
-    transition: 0.5s;
-    color: white;
-}
-
-.project-2 .project-link:hover {
-    background-position: right center;
-}
-
-.project-2 .github-link {
-    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-}
-
-.project-2 .github-link:hover {
-    background-position: right center;
-}
-
-.project-3 .project-link {
+.project-link {
     background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
     background-size: 200% auto;
     transition: 0.5s;
     color: white;
 }
 
-.project-3 .project-link:hover {
+.project-link:hover {
     background-position: right center;
 }
 
-.project-3 .github-link {
-    background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%);
+.github-link {
+    background-image: linear-gradient(to right, #485563 0%, #29323c  51%, #485563  100%);
     background-size: 200% auto;
     transition: 0.5s;
     color: white;
 }
 
-.project-3 .github-link:hover {
+.github-link:hover {
     background-position: right center;
-}
-
-.project-4 .project-link {
-    background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
-    background-size: 200% auto;
-    transition: 0.5s;
-    color: white;
-}
-
-.project-4 .project-link:hover {
-    background-position: right center;
-}
-
-.project-4 .github-link {
-    background-image: linear-gradient(to right, #000000 0%, #53346D  51%, #000000  100%);
-    background-size: 200% auto;
-    transition: 0.5s;
-    color: white;
-}
-
-.project-4 .github-link:hover {
-    background-position: right center;     
+    border: none;
 }
 
 .button-1, .button-2 {
@@ -236,25 +138,32 @@
     padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 1300px) {
+    .img {
+        height: 200px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
-    .row-1, .row-2 {
+    .rows {
         flex-direction: column;
         justify-content: center;
     }
 
-    .row-1 {
+    .rows {
         margin-top: 50px;
         justify-content: center;
         align-items: center;
     }
 
-    .row-2 {
-        margin-top: 100px;
-    }
-
     .project {
         justify-content: center;
         align-items: center;
+    }
+
+    .img {
+        height: auto;
+        object-fit: fill;
     }
 
     .project-buttons {
@@ -263,9 +172,5 @@
 
     .project-link {
         margin-bottom: 20px;
-    }
-
-    .row-2 {
-        margin-bottom: 450px;
     }
 }

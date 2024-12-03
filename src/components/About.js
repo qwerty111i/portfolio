@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import aboutImg from './images/aboutimg.png'
+import aboutImg from './images/aboutimg.jpg'
 import linkedin from './images/linkedin.png'
 import github from './images/github.png'
 import email from './images/gmail.png'
