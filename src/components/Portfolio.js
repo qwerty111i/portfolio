@@ -63,7 +63,7 @@ const Portfolio = () => {
               <img className='img img-1' src={altaruneGame} alt="Portfolio Website" />
             </div>
             <div className='project-content content-1'>
-              <h1 className='project-title'>Altarune (Game)</h1>
+              <h1 className='project-title'>Altarune Game</h1>
               <p className='project-description'>This is a strategic game that entails destroying enemies using towers that are placed around batteries.  The game was developed using the Unity game engine and C#.</p>
             </div>
             <div className='project-buttons button-1'>
