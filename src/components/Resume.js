@@ -58,12 +58,12 @@ const Resume = () => {
               <div className='coursework'>
                 <h4>Coursework:</h4>
                 <ul className='coursework-list'>
-                  <li>Linear Algebra</li>
-                  <li>Computer Organization</li>
-                  <li>Applied Combinatorics</li>
+                  <li>Algorithms</li>
+                  <li>Intro to Artificial Intelligence</li>
+                  <li>Systems and Networks</li>
                   <li>Data Structures</li>
-                  <li>Probability and Statistics</li>
-                  <li>Multivariable Calculus</li>
+                  <li>Computer Organization</li>
+                  <li>Linear Algebra</li>
                 </ul>
               </div>
             </div>
