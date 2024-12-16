@@ -27,6 +27,10 @@ const Portfolio = () => {
               <p className='project-description'>Project is currently under development!</p>
             </div>
             <div className='project-buttons button-1'>
+              {/*<button className='project-link' disabled
+              onClick={() => window.location.href = '/'}>
+                View Project
+              </button>*/}
               <button className='github-link'
               onClick={() => window.location.href = 'https://github.com/Surfnam/gt-marketplace'}>
                 View GitHub
@@ -65,6 +69,10 @@ const Portfolio = () => {
               <p className='project-description'>Project will be available soon!</p>
             </div>
             <div className='project-buttons button-1'>
+              {/*<button className='project-link' disabled
+              onClick={() => window.location.href = '/'}>
+                View Project
+              </button>*/}
               <button className='github-link'
               onClick={() => window.location.href = 'https://github.com/Carlijavier5/Altarune'}>
                 View GitHub
