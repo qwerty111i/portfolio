@@ -24,13 +24,12 @@ const Portfolio = () => {
               <h1 className='project-title'>GT Marketplace Website</h1>
               <p className='project-description'>This is a website similar to Facebook Marketplace, but designed for Georgia Tech students who want to buy or sell their items (especially useful when moving out).  The website was developed using the MERN stack (MongoDB, Express.js, React, and Node.js).  Websockets were used for the chat functionality.</p>
               <br />
-              <p className='project-description'>Project is currently under development!</p>
             </div>
             <div className='project-buttons button-1'>
-              {/*<button className='project-link' disabled
-              onClick={() => window.location.href = '/'}>
+              <button className='project-link'
+              onClick={() => window.location.href = 'https://gtmarketplace.onrender.com/login'}>
                 View Project
-              </button>*/}
+              </button>
               <button className='github-link'
               onClick={() => window.location.href = 'https://github.com/Surfnam/gt-marketplace'}>
                 View GitHub

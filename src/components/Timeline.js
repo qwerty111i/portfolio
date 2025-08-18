@@ -22,7 +22,22 @@ const Timeline = () => {
                 <div className='timeline-circle c1' />
                 <Slide direction="right" triggerOnce>
                     <div className='timeline-content'>
-                        <p className='timeline-date'>December 2023 - May 2024</p>
+                        <p className='timeline-date'>May 2025 - July 2025</p>
+                        <h2 className='timeline-title'>Legal Services of New Jersey</h2>
+                        <h3 className='timeline-position'>Software Engineer</h3>
+                        <ul className='timeline-description'>
+                            <li>Developed a lightweight .NET Core microservice that connects to SQL Server and exposes secure REST endpoints</li>
+                            <li>Automated content migration by writing C# web scrapers that pull data from legacy pages, publish the content to Umbraco CMS, and upload documents to OpenKM DMS</li>
+                            <li>Built responsive Angular components that render Umbraco content seamlessly across devices, improving the user experience</li>
+                        </ul>
+                    </div>
+                </Slide>
+            </div>
+            <div className='timeline-item'>
+                <div className='timeline-circle c2' />
+                <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
+                    <div className='timeline-content'>
+                        <p className='timeline-date'>Dec. 2023 - May 2024</p>
                         <h2 className='timeline-title'>Edison High School</h2>
                         <h3 className='timeline-position'>Teacher</h3>
                         <ul className='timeline-description'>
@@ -34,8 +49,8 @@ const Timeline = () => {
                 </Slide>
             </div>
             <div className='timeline-item'>
-                <div className='timeline-circle c2' />
-                <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
+                <div className='timeline-circle c1' />
+                <Slide direction="right" triggerOnce>
                     <div className='timeline-content'>
                         <p className='timeline-date'>June 2022 - August 2022</p>
                         <h2 className='timeline-title'>TechUnison</h2>
@@ -44,36 +59,6 @@ const Timeline = () => {
                             <li>Enhanced the user interface of an education application by designing and implementing visually appealing and user-friendly components using Flutter</li>
                             <li>Conceptualized unique design styles to make the education application more engaging to the end user</li>
                             <li>Collaborated with team leads and made various changes to the design based on real-time feedback</li>
-                        </ul>
-                    </div>
-                </Slide>
-            </div>
-            <div className='timeline-item'>
-                <div className='timeline-circle c3' />
-                <Slide direction="right" triggerOnce>
-                    <div className='timeline-content'>
-                        <p className='timeline-date'>August 2021</p>
-                        <h2 className='timeline-title'>4H Eco-Maniacs Website</h2>
-                        <h3 className='timeline-position'>Developer</h3>
-                        <ul className='timeline-description'>
-                            <li>Developed a website for a Rutgers cooperative extension that is focused on environmental community service using parallax, HTML, and the Bootstrap framework</li>
-                            <li>Customized each page of the website in order to attract new members to join the organization and provide information about the activities of the club</li>
-                        </ul>
-                    </div>
-                </Slide>
-            </div>
-            <div className='timeline-item'>
-                <div className='timeline-circle c4' />
-                <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
-                    <div className='timeline-content'>
-                        <p className='timeline-date'>May 2021</p>
-                        <h2 className='timeline-title'>4H Project Gift Website</h2>
-                        <h3 className='timeline-position'>Developer</h3>
-                        <ul className='timeline-description'>
-                            <li>Designed a website to bring in donations for the organization that buys gifts for children during Christmas using HTML, CSS, and Javascript</li>
-                            <li>Adapted the website to work on mobile and desktop, and displayed testimonials from volunteers</li>
-                            <li>Researched various hosting methods to reduce the overall cost of running the website</li>
-                            <li>Maintained and updated the website whenever necessary</li>
                         </ul>
                     </div>
                 </Slide>

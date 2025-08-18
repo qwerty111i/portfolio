@@ -14,9 +14,12 @@ import html from './images/html.png'
 import css from './images/css.png'
 import javascript from './images/javascript.png'
 import xml from './images/xml.png'
+import typescript from './images/typescript.png'
 
 // Framework Imports
 import react from './images/react.png'
+import angular from './images/angular.png'
+import dotnet from './images/dot-net.png'
 import node from './images/node.png'
 import express from './images/express.png'
 import websocket from './images/websocket.png'
@@ -32,8 +35,12 @@ import sonarqube from './images/sonarqube.png'
 import git from './images/git.png'
 
 // Database Imports
+import sqlserver from './images/sql-server.png'
 import firebase from './images/firebase.png'
 import mongodb from './images/mongodb.png'
+
+// Certification Imports
+import atnt from './images/atnt.png';
 
 import { Slide } from "react-awesome-reveal";
 
@@ -50,19 +57,18 @@ const Resume = () => {
               <h3>Atlanta, Georgia</h3>
               <div className='degree-info'>
                 <p>Bachelor of Science in Computer Science</p>
-                <div className='degree-container'>
-                  <p>GPA: 4.0</p>
-                  <p></p>
-                </div>
+                <p>GPA: 4.0</p>
               </div>
               <div className='coursework'>
                 <h4>Coursework:</h4>
                 <ul className='coursework-list'>
+                  <li>Machine Learning</li>
+                  <li>Operating Systems</li>
+                  <li>Advanced Computer Organization</li>
                   <li>Algorithms</li>
                   <li>Intro to Artificial Intelligence</li>
                   <li>Systems and Networks</li>
                   <li>Data Structures</li>
-                  <li>Computer Organization</li>
                   <li>Linear Algebra</li>
                 </ul>
               </div>
@@ -97,166 +103,277 @@ const Resume = () => {
           <div className='language-container'>
             <h1>Languages</h1>
             <div className="row">
-              <div className='skill-box language-box java'>
+              <div className='skill-box language-box left'>
                 <div className='img-container'>
-                  <img className='java-img' src={java} alt="Java" />
+                  <img className='java-img logo' src={java} alt="Java" />
                 </div>
-                <p>Java</p>
+                <div className='title-container'>
+                  <p className='java-title logo-title'>Java</p>
+                </div>
               </div>
-              <div className='skill-box language-box c-sharp'>
+              <div className='skill-box language-box right'>
                 <div className='img-container'>
-                  <img className='c-sharp-img' src={csharp} alt="C#" />
+                  <img className='c-sharp-img logo' src={csharp} alt="C#" />
                 </div>
-                <p>C#</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className='skill-box language-box c'>
-                <div className='img-container'>
-                  <img className='c-img' src={c} alt="C" />
+                <div className='title-container'>
+                  <p className='csharp-title logo-title'>C#</p>
                 </div>
-                <p>C</p>
-              </div>
-              <div className='skill-box language-box python'>
-                <div className='img-container'>
-                  <img className='python-img' src={python} alt="Python" />
-                </div>
-                <p>Python</p>
               </div>
             </div>
             <div className="row">
-              <div className='skill-box language-box html'>
+              <div className='skill-box language-box left'>
                 <div className='img-container'>
-                  <img className='html-img' src={html} alt="HTML5" />
+                  <img className='c-img logo' src={c} alt="C" />
                 </div>
-                <p>HTML5</p>
+                <div className='title-container'>
+                  <p className='c-title logo-title'>C</p>
+                </div>
               </div>
-              <div className='skill-box language-box css'>
+              <div className='skill-box language-box right'>
                 <div className='img-container'>
-                  <img className='css-img' src={css} alt="CSS" />
+                  <img className='python-img logo' src={python} alt="Python" />
                 </div>
-                <p>CSS3</p>
+                <div className='title-container'>
+                  <p className='python-title logo-title'>Python</p>
+                </div>
               </div>
             </div>
             <div className="row">
-              <div className='skill-box language-box javascript'>
+              <div className='skill-box language-box left'>
                 <div className='img-container'>
-                  <img className='javascript-img' src={javascript} alt="JavaScript" />
+                  <img className='javascript-img logo' src={javascript} alt="JavaScript" />
                 </div>
-                <p>JavaScript</p>
+                <div className='title-container'>
+                  <p className='javascript-title logo-title'>JavaScript</p>
+                </div>
               </div>
-              <div className='skill-box language-box xml'>
+              <div className='skill-box language-box right'>
                 <div className='img-container'>
-                  <img className='xml-img' src={xml} alt="XML" />
+                  <img className='typescript-img logo' src={typescript} alt="TypeScript" />
                 </div>
-                <p>XML</p>
+                <div className='title-container'>
+                  <p className='typescript-title logo-title'>TypeScript</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className='skill-box language-box left'>
+                <div className='img-container'>
+                  <img className='html-img logo' src={html} alt="HTML5" />
+                </div>
+                <div className='title-container'>
+                  <p className='html-title logo-title'>HTML5</p>
+                </div>
+              </div>
+              <div className='skill-box language-box right'>
+                <div className='img-container'>
+                  <img className='css-img logo' src={css} alt="CSS" />
+                </div>
+                <div className='title-container'>
+                  <p className='css-title logo-title'>CSS3</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className='skill-box language-box left bottom'>
+                <div className='img-container'>
+                  <img className='xml-img logo' src={xml} alt="XML" />
+                </div>
+                <div className='title-container'>
+                  <p className='xml-title logo-title'>XML</p>
+                </div>
+              </div>
+              <div className='skill-box language-box right bottom hidden'>
+                <div className='img-container'>
+                  <img className='empty-img logo' src={xml} alt="EMPTY" />
+                </div>
+                <div className='title-container'>
+                  <p className='empty-title logo-title'>EMPTY</p>
+                </div>
               </div>
             </div>
           </div>
           <div className='framework-container'>
             <h1>Frameworks</h1>
             <div className='row'>
-              <div className='skill-box framework-box react'>
+              <div className='skill-box framework-box left'>
                 <div className='img-container'>
-                  <img className='react-img' src={react} alt="React" />
+                  <img className='react-img logo' src={react} alt="React" />
                 </div>
-                <p>React</p>
+                <div className='title-container'>
+                  <p className='react-title logo-title'>React</p>
+                </div>
               </div>
-              <div className='skill-box framework-box node'>
+              <div className='skill-box framework-box right'>
                 <div className='img-container'>
-                  <img className='node-img' src={node} alt="Node" />
+                  <img className='angular-img logo' src={angular} alt="Angular" />
                 </div>
-                <p>Node.js</p>
-              </div>
-            </div>
-            <div className='row'>
-              <div className='skill-box framework-box express'>
-                <div className='img-container'>
-                  <img className='express-img' src={express} alt="Express" />
+                <div className='title-container'>
+                  <p className='angular-title logo-title'>Angular</p>
                 </div>
-                <p>Express.js</p>
-              </div>
-              <div className='skill-box framework-box websocket'>
-                <div className='img-container'>
-                  <img className='websocket-img' src={websocket} alt="Websockets" />
-                </div>
-                <p>WebSockets</p>
               </div>
             </div>
             <div className='row'>
-              <div className='skill-box framework-box flutter'>
+              <div className='skill-box framework-box left'>
                 <div className='img-container'>
-                  <img className='flutter-img' src={flutter} alt="Flutter" />
+                  <img className='node-img logo' src={node} alt="Node.js" />
                 </div>
-                <p>Flutter</p>
+                <div className='title-container'>
+                  <p className='node-title logo-title'>Node.js</p>
+                </div>
               </div>
-              <div className='skill-box framework-box bootstrap'>
+              <div className='skill-box framework-box right'>
                 <div className='img-container'>
-                  <img className='bootstrap-img' src={bootstrap} alt="Bootstrap" />
+                  <img className='dotnet-img logo' src={dotnet} alt=".NET" />
                 </div>
-                <p>Bootstrap</p>
+                <div className='title-container'>
+                  <p className='dotnet-title logo-title'>.NET</p>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='skill-box framework-box left'>
+                <div className='img-container'>
+                  <img className='websockets-img logo' src={websocket} alt="Websockets" />
+                </div>
+                <div className='title-container'>
+                  <p className='websockets-title logo-title'>Websockets</p>
+                </div>
+              </div>
+              <div className='skill-box framework-box right'>
+                <div className='img-container'>
+                  <img className='express-img logo' src={express} alt="Express" />
+                </div>
+                <div className='title-container'>
+                  <p className='express-title logo-title'>Express</p>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='skill-box framework-box left bottom'>
+                <div className='img-container'>
+                  <img className='flutter-img logo' src={flutter} alt="Flutter" />
+                </div>
+                <div className='title-container'>
+                  <p className='flutter-title logo-title'>Flutter</p>
+                </div>
+              </div>
+              <div className='skill-box framework-box right bottom'>
+                <div className='img-container'>
+                  <img className='bootstrap-img logo' src={bootstrap} alt="Bootstrap" />
+                </div>
+                <div className='title-container'>
+                  <p className='bootstrap-title logo-title'>Bootstrap</p>
+                </div>
               </div>
             </div>
           </div>
           <div className='software-container'>
             <h1>Software</h1>
             <div className='row'>
-              <div className='skill-box software-box androidStudio'>
+              <div className='skill-box software-box left'>
                 <div className='img-container'>
-                  <img className='androidStudio-img' src={androidStudio} alt="Google" />
+                  <img className='androidStudio-img logo' src={androidStudio} alt="Android Studio" />
                 </div>
-                <p>Android Studio</p>
+                <div className='title-container'>
+                  <p className='androidStudio-title logo-title'>Android Studio</p>
+                </div>
               </div>
-              <div className='skill-box software-box unity'>
+              <div className='skill-box software-box right'>
                 <div className='img-container'>
-                  <img className='unity-img' src={unity} alt="Google" />
+                  <img className='unity-img logo' src={unity} alt="Unity" />
                 </div>
-                <p>Unity</p>
-              </div>
-            </div>
-            <div className='row'>
-              <div className='skill-box software-box godot'>
-                <div className='img-container'>
-                  <img className='godot-img' src={godot} alt="Godot" />
+                <div className='title-container'>
+                  <p className='unity-title logo-title'>Unity</p>
                 </div>
-                <p>Godot</p>
-              </div>
-              <div className='skill-box software-box postman'>
-                <div className='img-container'>
-                  <img className='postman-img' src={postman} alt="Postman" />
-                </div>
-                <p>Postman</p>
               </div>
             </div>
             <div className='row'>
-              <div className='skill-box software-box sonarqube'>
+              <div className='skill-box software-box left'>
                 <div className='img-container'>
-                  <img className='sonarqube-img' src={sonarqube} alt="SonarQube" />
+                  <img className='godot-img logo' src={godot} alt="Godot" />
                 </div>
-                <p>SonarQube</p>
+                <div className='title-container'>
+                  <p className='godot-title logo-title'>Godot</p>
+                </div>
               </div>
-              <div className='skill-box software-box git'>
+              <div className='skill-box software-box right'>
                 <div className='img-container'>
-                  <img className='git-img' src={git} alt="Git" />
+                  <img className='postman-img logo' src={postman} alt="Postman" />
                 </div>
-                <p>Git</p>
+                <div className='title-container'>
+                  <p className='postman-title logo-title'>Postman</p>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='skill-box software-box left bottom'>
+                <div className='img-container'>
+                  <img className='sonarqube-img logo' src={sonarqube} alt="SonarQube" />
+                </div>
+                <div className='title-container'>
+                  <p className='sonarqube-title logo-title'>SonarQube</p>
+                </div>
+              </div>
+              <div className='skill-box software-box right bottom'>
+                <div className='img-container'>
+                  <img className='git-img logo' src={git} alt="Git" />
+                </div>
+                <div className='title-container'>
+                  <p className='git-title logo-title'>Git</p>
+                </div>
               </div>
             </div>
           </div>
           <div className='database-container'>
             <h1>Databases</h1>
             <div className='row'>
-              <div className='skill-box database-box firebase'>
+              <div className='skill-box database-box left'>
                 <div className='img-container'>
-                  <img className='firebase-img' src={firebase} alt="Firebase" />
+                  <img className='sqlserver-img logo' src={sqlserver} alt="SQL Server" />
                 </div>
-                <p>Firebase</p>
+                <div className='title-container'>
+                  <p className='sqlserver-title logo-title'>SQL Server</p>
+                </div>
               </div>
-              <div className='skill-box database-box mongodb'>
+              <div className='skill-box database-box right'>
                 <div className='img-container'>
-                  <img className='mongodb-img' src={mongodb} alt="MongoDB" />
+                  <img className='mongodb-img logo' src={mongodb} alt="MongoDB" />
                 </div>
-                <p>MongoDB</p>
+                <div className='title-container'>
+                  <p className='mongodb-title logo-title'>MongoDB</p>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='skill-box database-box bottom left'>
+                <div className='img-container'>
+                  <img className='firebase-img logo' src={firebase} alt="Firebase" />
+                </div>
+                <div className='title-container'>
+                  <p className='firebase-title logo-title'>Firebase</p>
+                </div>
+              </div>
+              <div className='skill-box database-box right bottom hidden'>
+                <div className='img-container'>
+                  <img className='empty-img logo' src={mongodb} alt="Empty" />
+                </div>
+                <div className='title-container'>
+                  <p className='empty-title logo-title'>EMPTY</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='certifications-container'>
+            <h1>Certifications</h1>
+            <div className='row'>
+              <div className='full-skill-box certification-box left right bottom'>
+                <div className='full-img-container'>
+                  <img className='atnt-img logo' src={atnt} alt="AT&T Technology Academy" />
+                </div>
+                <div className='title-container'>
+                  <p className='atnt-title logo-title'>AT&T Technology Academy</p>
+                </div>
               </div>
             </div>
           </div>
