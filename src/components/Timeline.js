@@ -37,7 +37,7 @@ const Timeline = () => {
                 <div className='timeline-circle c2' />
                 <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
                     <div className='timeline-content'>
-                        <p className='timeline-date'>Dec. 2023 - May 2024</p>
+                        <p className='timeline-date'>December 2023 - May 2024</p>
                         <h2 className='timeline-title'>Edison High School</h2>
                         <h3 className='timeline-position'>Teacher</h3>
                         <ul className='timeline-description'>
