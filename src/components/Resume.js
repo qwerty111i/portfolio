@@ -63,6 +63,7 @@ const Resume = () => {
                 <h4>Coursework:</h4>
                 <ul className='coursework-list'>
                   <li>Machine Learning</li>
+                  <li>Natural Language</li>
                   <li>Operating Systems</li>
                   <li>Advanced Computer Organization</li>
                   <li>Algorithms</li>
