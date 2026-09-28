@@ -15,6 +15,7 @@ import css from './images/css.png'
 import javascript from './images/javascript.png'
 import xml from './images/xml.png'
 import typescript from './images/typescript.png'
+import cpp from './images/cpp.png'
 
 // Framework Imports
 import react from './images/react.png'
@@ -62,15 +63,17 @@ const Resume = () => {
               <div className='coursework'>
                 <h4>Coursework:</h4>
                 <ul className='coursework-list'>
+                  <li>Advanced Operating Systems</li>
+                  <li>Compilers</li>
+                  <li>Operating Systems</li>
+                  <li>Systems and Networks</li>
+                  <li>Advanced Computer Organization</li>
+                  <li>Reverse Malware Engineering</li>
+                  <li>Deep Learning</li>
                   <li>Machine Learning</li>
                   <li>Natural Language</li>
-                  <li>Operating Systems</li>
-                  <li>Advanced Computer Organization</li>
                   <li>Algorithms</li>
-                  <li>Intro to Artificial Intelligence</li>
-                  <li>Systems and Networks</li>
                   <li>Data Structures</li>
-                  <li>Linear Algebra</li>
                 </ul>
               </div>
             </div>
@@ -114,10 +117,10 @@ const Resume = () => {
               </div>
               <div className='skill-box language-box right'>
                 <div className='img-container'>
-                  <img className='c-sharp-img logo' src={csharp} alt="C#" />
+                  <img className='python-img logo' src={python} alt="Python" />
                 </div>
                 <div className='title-container'>
-                  <p className='csharp-title logo-title'>C#</p>
+                  <p className='python-title logo-title'>Python</p>
                 </div>
               </div>
             </div>
@@ -132,10 +135,10 @@ const Resume = () => {
               </div>
               <div className='skill-box language-box right'>
                 <div className='img-container'>
-                  <img className='python-img logo' src={python} alt="Python" />
+                  <img className='cpp-img logo' src={cpp} alt="C++" />
                 </div>
                 <div className='title-container'>
-                  <p className='python-title logo-title'>Python</p>
+                  <p className='cpp-title logo-title'>C++</p>
                 </div>
               </div>
             </div>
@@ -184,12 +187,12 @@ const Resume = () => {
                   <p className='xml-title logo-title'>XML</p>
                 </div>
               </div>
-              <div className='skill-box language-box right bottom hidden'>
+              <div className='skill-box language-box right bottom'>
                 <div className='img-container'>
-                  <img className='empty-img logo' src={xml} alt="EMPTY" />
+                  <img className='c-sharp-img logo' src={csharp} alt="C#" />
                 </div>
                 <div className='title-container'>
-                  <p className='empty-title logo-title'>EMPTY</p>
+                  <p className='csharp-title logo-title'>C#</p>
                 </div>
               </div>
             </div>

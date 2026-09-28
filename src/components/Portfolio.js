@@ -1,5 +1,6 @@
 import React from 'react'
 import './Portfolio.css'
+import webroguesSite from './images/webrogues-site.png'
 import portfolioSite from './images/portfolio-site.png'
 import ecomaniacsSite from './images/ecomaniacs-site.png'
 import projectgiftSite from './images/projectgift-site.png'
@@ -18,6 +19,26 @@ const Portfolio = () => {
         <div className='rows'>
           <div className='project portfolio-website'>
             <div className='project-image'>
+              <img className='img img-1' src={webroguesSite} alt="WebRogues" />
+            </div>
+            <div className='project-content content-1'>
+              <h1 className='project-title'>Webrogues</h1>
+              <p className='project-description'>This is a real-time multiplayer 2D game that involves surviving levels to reach the end.  The game was developed using Phaser.js.  It features an authoritative server architecture with client-side prediction and server reconciliation to eliminate input lag.</p>
+              <br />
+            </div>
+            <div className='project-buttons button-1'>
+              <button className='project-link'
+                onClick={() => window.location.href = 'https://webrogues.com/'}>
+                View Project
+              </button>
+              <button className='github-link'
+                onClick={() => window.location.href = 'https://github.com/qwerty111i/webrogues'}>
+                View GitHub
+              </button>
+            </div>
+          </div>
+          <div className='project portfolio-website'>
+            <div className='project-image'>
               <img className='img img-1' src={marketplaceSite} alt="Portfolio Website" />
             </div>
             <div className='project-content content-1'>
@@ -27,11 +48,11 @@ const Portfolio = () => {
             </div>
             <div className='project-buttons button-1'>
               <button className='project-link'
-              onClick={() => window.location.href = 'https://gtmarketplace.onrender.com/login'}>
+                onClick={() => window.location.href = 'https://gtmarketplace.onrender.com/login'}>
                 View Project
               </button>
               <button className='github-link'
-              onClick={() => window.location.href = 'https://github.com/Surfnam/gt-marketplace'}>
+                onClick={() => window.location.href = 'https://github.com/Surfnam/gt-marketplace'}>
                 View GitHub
               </button>
             </div>
@@ -48,11 +69,11 @@ const Portfolio = () => {
             </div>
             <div className='project-buttons button-1'>
               <button className='project-link'
-              onClick={() => window.location.href = 'https://wandersync.onrender.com/'}>
+                onClick={() => window.location.href = 'https://wandersync.onrender.com/'}>
                 View Project
               </button>
               <button className='github-link'
-              onClick={() => window.location.href = 'https://github.com/qwerty111i/CS2340D_Team19'}>
+                onClick={() => window.location.href = 'https://github.com/qwerty111i/CS2340D_Team19'}>
                 View GitHub
               </button>
             </div>
@@ -73,7 +94,7 @@ const Portfolio = () => {
                 View Project
               </button>*/}
               <button className='github-link'
-              onClick={() => window.location.href = 'https://github.com/Carlijavier5/Altarune'}>
+                onClick={() => window.location.href = 'https://github.com/Carlijavier5/Altarune'}>
                 View GitHub
               </button>
             </div>
@@ -88,11 +109,11 @@ const Portfolio = () => {
             </div>
             <div className='project-buttons button-1'>
               <button className='project-link'
-              onClick={() => window.location.href = '/'}>
+                onClick={() => window.location.href = '/'}>
                 View Project
               </button>
               <button className='github-link'
-              onClick={() => window.location.href = 'https://github.com/qwerty111i/portfolio'}>
+                onClick={() => window.location.href = 'https://github.com/qwerty111i/portfolio'}>
                 View GitHub
               </button>
             </div>
@@ -107,11 +128,11 @@ const Portfolio = () => {
             </div>
             <div className='project-buttons button-2'>
               <button className='project-link'
-              onClick={() => window.location.href = 'https://ecomaniacs.bss.design/'}>
+                onClick={() => window.location.href = 'https://ecomaniacs.onrender.com/'}>
                 View Project
               </button>
               <button className='github-link'
-              onClick={() => window.location.href = 'https://github.com/qwerty111i/ecomaniacs'}>
+                onClick={() => window.location.href = 'https://github.com/qwerty111i/ecomaniacs'}>
                 View GitHub
               </button>
             </div>
@@ -126,11 +147,11 @@ const Portfolio = () => {
             </div>
             <div className='project-buttons button-3'>
               <button className='project-link'
-              onClick={() => window.location.href = 'https://project-gift.onrender.com/'}>
+                onClick={() => window.location.href = 'https://project-gift.onrender.com/'}>
                 View Project
               </button>
               <button className='github-link'
-              onClick={() => window.location.href = 'https://github.com/qwerty111i/projectgift.github.io'}>
+                onClick={() => window.location.href = 'https://github.com/qwerty111i/projectgift.github.io'}>
                 View GitHub
               </button>
             </div>
@@ -145,11 +166,11 @@ const Portfolio = () => {
             </div>
             <div className='project-buttons button-4'>
               <button className='project-link'
-              onClick={() => window.location.href = 'https://gamedevelopmentclub-team.github.io/Demo/'}>
+                onClick={() => window.location.href = 'https://gamedevelopmentclub-team.github.io/Demo/'}>
                 View Project
               </button>
               <button className='github-link'
-              onClick={() => window.location.href = 'https://github.com/GameDevelopmentClub-Team/Demo'}>
+                onClick={() => window.location.href = 'https://github.com/GameDevelopmentClub-Team/Demo'}>
                 View GitHub
               </button>
             </div>

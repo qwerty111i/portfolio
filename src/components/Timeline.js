@@ -22,6 +22,36 @@ const Timeline = () => {
                 <div className='timeline-circle c1' />
                 <Slide direction="right" triggerOnce>
                     <div className='timeline-content'>
+                        <p className='timeline-date'>June 2026 - August 2026</p>
+                        <h2 className='timeline-title'>Accenture</h2>
+                        <h3 className='timeline-position'>Technology Architecture Analyst</h3>
+                        <ul className='timeline-description'>
+                            <li>Engineered an automated contract compliance AI workflow for a Fortune 100 pharmaceutical client using GPT-4o REST APIs, anti-hallucination layers, prompt guardrails, and JSON schema enforcement, reducing manual review time by 90%</li>
+                            <li>Developed a full-stack React and TypeScript web application for automated timesheet tracking, using debounced saves and custom state management to reduce user friction and improve submission compliance</li>
+                            <li>Built logging and error handling pipelines across API endpoints to track run metrics, implementing static fallbacks that maintain 99.9% system uptime during third-party AI outages</li>
+                        </ul>
+                    </div>
+                </Slide>
+            </div>
+            <div className='timeline-item'>
+                <div className='timeline-circle c2' />
+                <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
+                    <div className='timeline-content'>
+                        <p className='timeline-date'>January 2026 - Present</p>
+                        <h2 className='timeline-title'>CS 2200: Systems & Networks</h2>
+                        <h3 className='timeline-position'>Senior Undergraduate Teaching Assistant</h3>
+                        <ul className='timeline-description'>
+                            <li>Facilitated instruction of over 400 students in a core systems course, introducing concepts like virtual memory, pipelining, scheduling, multithreading, and file systems</li>
+                            <li>Engineered a bi-directional transpilation pipeline in Python that parses Canvas QTI item banks into a custom intermediate representation (IR), serializes questions into editable Markdown documents, and compiles them into New Canvas Quiz packages, reducing manual exam creation time by 90%</li>
+                            <li>Developed interactive visualizations using React and TypeScript to simulate complex memory hierarchy concepts such as virtual memory and caching</li>
+                        </ul>
+                    </div>
+                </Slide>
+            </div>
+            <div className='timeline-item'>
+                <div className='timeline-circle c1' />
+                <Slide direction="right" triggerOnce>
+                    <div className='timeline-content'>
                         <p className='timeline-date'>May 2025 - July 2025</p>
                         <h2 className='timeline-title'>Legal Services of New Jersey</h2>
                         <h3 className='timeline-position'>Software Engineer</h3>
@@ -34,7 +64,7 @@ const Timeline = () => {
                 </Slide>
             </div>
             <div className='timeline-item'>
-                <div className='timeline-circle c2' />
+                <div className='timeline-circle c4' />
                 <Slide direction={mobileView ? 'right' : 'left'} triggerOnce>
                     <div className='timeline-content'>
                         <p className='timeline-date'>December 2023 - May 2024</p>
